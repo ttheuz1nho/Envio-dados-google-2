@@ -1,0 +1,106 @@
+:root {
+    --bg-color: #1a1a1a;
+    --form-bg: #242424;
+    --text-color: #e0e0e0;
+    --input-bg: #333333;
+    --button-bg: #4a5de0;
+    --button-hover: #3a49b8;
+    --border-color: #3e3e3e;
+    --success-color: #4CAF50;
+    --error-color: #F44336;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 450px;
+}
+
+.form-card {
+    background-color: var(--form-bg);
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    min-width: 320px;
+}
+
+h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1.8rem;
+    text-align: center;
+    color: var(--text-color);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+input {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    background-color: var(--input-bg);
+    color: var(--text-color);
+    font-size: 1rem;
+    transition: border-color 0.3s;
+    box-sizing: border-box;
+}
+
+input:focus {
+    outline: none;
+    border-color: var(--button-bg);
+}
+
+button {
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--button-bg);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 0.5rem;
+}
+
+button:hover {
+    background-color: var(--button-hover);
+}
+
+.status-message {
+    margin-top: 1.2rem;
+    padding: 0.8rem;
+    border-radius: 6px;
+    text-align: center;
+    display: none;
+}
+
+.success {
+    background-color: var(--success-color);
+    display: block;
+}
+
+.error {
+    background-color: var(--error-color);
+    display: block;
+}
